@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedReminder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>💊 MedReminder</h1>
+
+  <label for="medicine">Dori nomi:</label>
+  <input type="text" id="medicine" placeholder="Masalan: Paracetamol" oninput="showImage()" />
+
+  <div>
+    <img id="medicineImage" src="" alt="Dori rasmi" />
+  </div>
+
+  <label for="time">Ichish vaqti:</label>
+  <input type="time" id="time" />
+
+  <button onclick="setReminder()">⏰ Eslatma qo‘shish</button>
+
+  <div id="reminderText"></div>
+
+  <audio id="alertSound" src="data:audio/mp3;base64,//uQZAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAACcQCAAwP//+3//f/8H/h/5wAA/////wA..." preload="auto"></audio>
+
+  <script src="index.js"></script>
+  <audio id="alertSound" preload="auto">
+  <source src="data:audio/mp3;base64,//uQZAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAACcQCAAwP//+3//f/8H/h/5wAA/////wA..." type="audio/mp3" />
+</audio>
+
+</body>
+</html>
